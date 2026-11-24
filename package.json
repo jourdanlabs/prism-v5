@@ -1,0 +1,16 @@
+{
+  "name": "@omnis/prism-v5",
+  "version": "5.0.0",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "exports": {
+    ".": "./src/index.js",
+    "./core/*": "./src/core/*.js",
+    "./packs/*": "./src/packs/*.js"
+  },
+  "bin": { "prism-v5": "./bin/prism-v5.mjs" },
+  "scripts": {
+    "test": "node --test test/prism-v5.test.mjs",
+    "bench": "node bin/prism-v5.mjs bench"
+  }
+}
